@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador.</p>
+
+      <picture>
+
+        <source media="(max-width:750px )" srcset="imagens/300.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/700.png" type="image/png">
+        <img src="imagens/1000.png" alt="Imagem flexivel">
+
+      </picture>
+
+        <h1>Reproduzindo audio</h1>
+
+        <audio preload="auto" controls autoplay>
+
+          <source src="midia/Surface of the Moon - John Patitucci.mp3" controls auto play type="audio/mpeg">
+          <source src="midia/Surface of the Moon - John Patitucci.ogg" controls auto play type="audio/ogg">
+          <source src="midia/Surface of the Moon - John Patitucci.wav" controls auto play type="audio/wav">
+
+
+        </audio>
+
+
+
+
+</body>
+</html>
