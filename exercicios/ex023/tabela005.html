@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table{
+        border-collapse: collapse;
+        width: 500px;
+      }
+
+      caption{
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 10px;
+      }
+
+      th , td {
+        border: solid 1px black;
+        padding: 8px;
+      }
+
+      col.cnome{
+        background-color: cadetblue; 
+      }
+
+      col.csexo{
+        background-color: aqua;
+      }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Exercicios de tabelas</h1>
+
+    <table>
+
+    <caption>Cadastro</caption>
+
+    <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="3">
+            <col class="cidade">
+            <col class="cprof">
+    </colgroup>
+
+    <thead>
+        <th>Nome</th>
+        <th>sexo</th>
+        <th>Idade</th>
+        <th>Prof</th>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Claúdio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>Otavio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </tbody>
+
+
+    </table>
+
+
+
+</body>
+</html>

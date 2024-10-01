@@ -17,7 +17,7 @@
 
     th , td{
         border: solid 1px black;
-        text-align: center;
+        padding: 10px;
     }
 
     </style>
@@ -28,15 +28,20 @@
 
       <thead>
           <tr>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
           </tr>
       </thead>
 
+      <tfoot>
+        <th colspan="4" scope="row">Total</th>
+        <td>1000</td>
+      </tfoot>
+
       <tbody>
           <tr>
-            <th rowspan="3">mulheres</th>
+            <th rowspan="3" scope="rowgroup">mulheres</th>
             <td>Ana Maria santos</td>
             <td>alien</td>
             <td>Rambo</td>
@@ -55,7 +60,7 @@
             <td>Big Hero</td>
           </tr>
           <tr>
-            <th rowspan="3">Homens</th>
+            <th rowspan="3" scope="rowgroup">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
