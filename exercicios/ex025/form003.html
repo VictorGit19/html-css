@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 3</title>
+</head>
+<body>
+
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" autocomplete="on">
+
+
+        <fieldset>
+            
+            <legend>Dados pessoais</legend>
+
+            <p>
+                <label for="inome">Nome :</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" autocomplete="name" placeholder="Nome Completo">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="numero" id="imedia" required min="0" max="10" value="5" step="0.1">
+            </p>
+            <p>
+                <label for="iano">Periodo letivo </label>
+                <input type="month" name="calendario" id="iano" required>
+            </p>
+            <p>
+                <label for="idata">Data da prova </label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="ihora">Hora da prova </label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        
+
+
+
+    </form>
+    
+</body>
+</html>
