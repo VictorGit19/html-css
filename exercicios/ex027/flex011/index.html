@@ -18,13 +18,26 @@
     #item {
         background-color: lightblue;
         border: 1px solid black;
-        flex-basis: 250px;
-        flex-shrink: 1;
-        flex-grow: 0;     
-        
-        /* flex-grow : crescer : 1 /
-        /* flex-shrink : encolher : 1 */
+        flex-basis: 300px;
+           
     } 
+    
+
+    div.cx1 {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    div.cx2 {
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+
+    div.cx3 {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
 
     </style>
 
@@ -32,9 +45,9 @@
 </head>
 <body>
       <div id="conteiner">
-                <div id="item">A</div>
-                <div id="item">B</div>
-                <div id="item">C</div>
+                <div id="item" class="cx1">A</div>
+                <div id="item" class="cx2">B</div>
+                <div id="item" class="cx3">C</div>
       </div>
 </body>
 </html>
